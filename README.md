@@ -1,3 +1,6 @@
+# React-BookList is a very basic react application made for learning purpose.
+ Visit [here](https://simple-booklist-react.netlify.app/) to view the live demo
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
