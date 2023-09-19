@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: #f1f5f8;
+  color: #222;
+}
+
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.book h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.book p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: aqua;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: capitalize;
 }
